@@ -8,7 +8,7 @@
 
 <%= form_tag 'review', remote: true, id: "review_form" do |f| %>
 	<%= hidden_field_tag "office_id", @office.id %>
-	<%= text_field_tag "email",'', placeholder: "Your Email", class: 'span12' %>
+	<%= text_field_tag "email",'', placeholder: "Your Email", class: 'tablet span12' %>
 	<p>Which doctor did you see today?</p>
 	<% @office.doctors.each do |doctor| %>
 		<label class="radio btn span11">
