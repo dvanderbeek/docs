@@ -4,6 +4,8 @@
 
 <h5>THANKS FOR YOUR BUSINESS!</h5>
 
+<p>We would greatly appreciate your review of the doctor you visited today.  Please fill out the form below and we'll email you instructions for easily submitting a quick review online.  Thanks!</p>
+
 <%= form_tag 'review', remote: true, id: "review_form" do |f| %>
 	<%= hidden_field_tag "office_id", @office.id %>
 	<%= text_field_tag "email",'', placeholder: "Your Email", class: 'span12' %>
