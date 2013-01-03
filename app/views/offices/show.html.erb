@@ -1,0 +1,19 @@
+<div class="alert alert-success" id="message" style="display: none;">Thanks!</div>
+
+<h2><%= @office.name %></h2>
+
+<h5>THANKS FOR YOUR BUSINESS!</h5>
+
+<%= form_tag 'review', remote: true, id: "review_form" do |f| %>
+	<%= hidden_field_tag "office_id", @office.id %>
+	<%= text_field_tag "email",'', placeholder: "Your Email", class: 'span12' %>
+	<p>Which doctor did you see today?</p>
+	<% @office.doctors.each do |doctor| %>
+		<label class="radio">
+		  <%= radio_button_tag 'doctor', doctor.id %>
+		  <%= doctor.name %>
+		</label>
+	<% end %>
+	<br>
+	<p><%= submit_tag "Save", class: "btn" %></p>
+<% end %>

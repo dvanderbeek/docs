@@ -1,0 +1,17 @@
+<%= simple_nested_form_for(@office) do |f| %>
+	
+	<%= f.error_notification %>
+	
+  <div class="form-inputs">
+    <%= f.input :name, placeholder: "Office Name" %>
+    <%= f.fields_for :doctors do |doctor_fields| %>
+    	<%= doctor_fields.input :name, placeholder: "Doctor's Name" %> 
+    	<%= doctor_fields.link_to_remove "Remove" %>
+    <% end %>
+    <p><%= f.link_to_add "Add a Doctor", :doctors %></p>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn' %>
+  </div>
+<% end %>

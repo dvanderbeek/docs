@@ -26,3 +26,6 @@ gem "binding_of_caller", ">= 0.6.8", :group => :development
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 gem "pg", :group => :production
 gem "sqlite3", :group => [:development, :test]
+gem "nested_form"
+gem "jquery_mobile_rails"
+gem "letter_opener", :group => :development
