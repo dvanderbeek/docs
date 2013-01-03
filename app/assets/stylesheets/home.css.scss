@@ -5,7 +5,6 @@
 @import 'bootstrap/mixins';
 .radio { 
 	font-size: 18px; 
-	background: #ccc;
-	padding: 20px;
-	@include border-radius(15px);
+	padding: 20px 48px 20px 48px;
+	margin: 0px;
 }

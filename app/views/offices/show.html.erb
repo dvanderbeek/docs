@@ -9,11 +9,10 @@
 	<%= text_field_tag "email",'', placeholder: "Your Email", class: 'span12' %>
 	<p>Which doctor did you see today?</p>
 	<% @office.doctors.each do |doctor| %>
-		<label class="radio">
+		<label class="radio btn span11">
 		  <%= radio_button_tag 'doctor', doctor.id %>
 		  <%= doctor.name %>
 		</label>
 	<% end %>
-	<br>
-	<p><%= submit_tag "Save", class: "btn" %></p>
+	<%= submit_tag "Submit", class: "btn btn-primary btn-large", style: "margin-top: 10px;" %>
 <% end %>
