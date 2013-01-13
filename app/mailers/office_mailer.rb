@@ -10,7 +10,7 @@ class OfficeMailer < ActionMailer::Base
     @doctor = doctor
     @email = email
 
-    mail to: "earlynovrock@gmail.com", 
+    mail to: "review@pavomd.com", 
          from: email,
          subject: "New Doctor Review!"
   end
