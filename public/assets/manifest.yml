@@ -1,4 +1,6 @@
 ---
+pavo_md_logo.png: pavo_md_logo-786a203337d8288270dfef1126d4cc82.png
+pavo_md_logo/index.png: pavo_md_logo-786a203337d8288270dfef1126d4cc82.png
 application.js: application-7c631d8beba4cadd951622c7cf24b46f.js
 application/index.js: application-7c631d8beba4cadd951622c7cf24b46f.js
 application.css: application-92d55841a2aceb8209b4e1be9311ed44.css
